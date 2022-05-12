@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (min-width:501px){
+.container{
+    background: linear-gradient( rgba(252, 78, 78, 0.5) 100%, rgba(252, 78, 78, 0.5)100%),url("/Images/bg-intro-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 180px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.text{
+    margin: 25vh 180px 15vh 0px;
+}
+
+.text h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text p{
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn-container{
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: hsl(154, 59%, 51%);
+    width: 40%;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-container{
+    display: grid;
+    place-items: center;
+}
+
+.form-container label{
+  background: hsl(248, 32%, 49%); 
+   padding: 15px 90px;
+   width: 100%;
+   text-align: center;
+   font-size: 12px;
+   color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 3px hsl(240, 1%, 74%);
+   margin: 0;
+   cursor: pointer;
+}
+
+form{
+    margin-top: 0;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 10px;
+   box-shadow: 0 3px hsl(240, 1%, 74%);
+
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    border: .5px solid silver ;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 20px;
+}
+
+form button{
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+form p{
+    text-align: center;
+    font-size: 13px;
+}
+
+form span{
+    color: hsl(0, 100%, 74%) ;
+    cursor: pointer;
+}
+}
+
+
+
+@media screen and (max-width:500px){
+
+.container{
+    background: linear-gradient( rgba(255, 122, 122, .8) 100%, rgba(255, 122, 122, .7)100%),url("/Images/bg-intro-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 10px;
+}
+
+.text{
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+}
+
+.text h1{
+    padding: 10px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.text p{
+    text-align: center;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.form-container{
+    display: grid;
+    place-items: center;
+}
+
+.form-container label{
+  background: hsl(248, 32%, 49%); 
+   padding: 15px 90px;
+   width: 100%;
+   text-align: center;
+   font-size: 12px;
+   color: #fff;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+form{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border: .5px solid silver ;
+    border-radius: 8px;
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 20px;
+}
+
+form button{
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+form p{
+    text-align: center;
+    font-size: 13px;
+}
+
+form span{
+    color: hsl(0, 100%, 74%) ;
+    cursor: pointer;
+}
+
+}
